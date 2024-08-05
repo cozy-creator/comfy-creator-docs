@@ -5,6 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -18,7 +19,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,4 +28,48 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar__inner {
+  position: relative;
+}
+
+.navbar__item.navbar__link {
+  position: absolute;
+  margin-left: -50px;
+  left: 50%;
+}
+
+.navbar__item.navbar__link:nth-last-child(1) {
+  margin-left: -100px;
+}
+
+.navbar__item.navbar__link:nth-last-child(2) {
+  margin-left: 40px;
+}
+
+.navbar__item.navbar__link:nth-child(1) {
+  right: 0;
+  left: 0;
+  position: relative;
+}
+
+.navbar__item.navbar__link:nth-last-child(2)::before {
+  content: "\f02d"; /* FontAwesome icon unicode for user */
+  font-family: "Font Awesome 5 Free"; /* Ensure you're using the correct FontAwesome version */
+  font-weight: 900; /* FontAwesome font weight */
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar__item.navbar__link:nth-last-child(1)::before {
+  content: "\f201"; /* FontAwesome icon unicode for user */
+  font-family: "Font Awesome 5 Free"; /* Ensure you're using the correct FontAwesome version */
+  font-weight: 900; /* FontAwesome font weight */
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
