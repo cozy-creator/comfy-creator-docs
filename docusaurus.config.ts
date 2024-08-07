@@ -72,12 +72,16 @@ const config: Config = {
         // Replace with your project's social card
         // image: 'img/docusaurus-social-card.jpg',
         navbar: {
-            title: 'ComfyCreator',
+            style: 'dark',
+            title: 'Cozy Creator',
             logo: {
                 alt: 'ComfyCreator Logo',
                 src: '/img/img.png',
             },
             items: [
+                {to: 'https://cozy.art/community/live-feed', label: 'Community', position: 'left'},
+                {to: 'https://cozy.art/generate', label: 'Generate', position: 'left'},
+                {to: 'https://cozy.art/albums', label: 'Albums', position: 'left'},
                 {to: '/docs/intro', label: 'Docs', position: 'left'},
                 {to: '/research/research', label: 'Research', position: 'left'},
                 {
@@ -86,6 +90,7 @@ const config: Config = {
                     position: 'right',
                 },
             ],
+            hideOnScroll: true,
         },
         footer: {
             style: 'dark',

@@ -15,7 +15,7 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(239, 8, 8, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,49 +27,22 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --docusaurus-highlighted-code-line-bg: rgb(0, 0, 0);
 }
 
-.navbar__inner {
-  position: relative;
+.navbar {
+  background-color: rgb(0, 0, 0);
 }
 
-.navbar__item.navbar__link {
-  position: absolute;
-  margin-left: -50px;
-  left: 50%;
+.navbar__link {
+  font-weight: 400;
+  font-size: 0.8rem;
 }
 
-.navbar__item.navbar__link:nth-last-child(1) {
-  margin-left: -100px;
+.navbar__link:last-child {
+  margin-left: auto;
 }
 
-.navbar__item.navbar__link:nth-last-child(2) {
-  margin-left: 40px;
-}
-
-.navbar__item.navbar__link:nth-child(1) {
-  right: 0;
-  left: 0;
-  position: relative;
-}
-
-.navbar__item.navbar__link:nth-last-child(2)::before {
-  content: "\f02d"; /* FontAwesome icon unicode for user */
-  font-family: "Font Awesome 5 Free"; /* Ensure you're using the correct FontAwesome version */
-  font-weight: 900; /* FontAwesome font weight */
-  position: absolute;
-  left: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.navbar__item.navbar__link:nth-last-child(1)::before {
-  content: "\f201"; /* FontAwesome icon unicode for user */
-  font-family: "Font Awesome 5 Free"; /* Ensure you're using the correct FontAwesome version */
-  font-weight: 900; /* FontAwesome font weight */
-  position: absolute;
-  left: -15px;
-  top: 50%;
-  transform: translateY(-50%);
+.navbar__brand {
+  margin-right: auto;
 }
