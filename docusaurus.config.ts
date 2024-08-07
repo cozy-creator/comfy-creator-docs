@@ -75,7 +75,7 @@ const config: Config = {
             style: 'dark',
             title: 'Cozy Creator',
             logo: {
-                alt: 'ComfyCreator Logo',
+                alt: 'Cozy Creator Logo',
                 src: '/img/img.png',
             },
             items: [
@@ -118,7 +118,7 @@ const config: Config = {
                     ],
                 },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} ComfyCreator`,
+            copyright: `Copyright © ${new Date().getFullYear()} Cozy Creator`,
         },
         prism: {
             theme: prismThemes.github,
